@@ -1,15 +1,20 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Nav from '../components/Nav.astro';
+// import Card from '../components/Card.astro';
 import '../styles/main.css';
 
 ---
 
 <Layout title="Home" name="AstroAnime">
     <Nav></Nav>
-	<main class="font-test">
-		<h1 class="text-6xl font-bold w-full text-center ">Welcome</h1>
-        <div id="content"></div>
+    <section class="h-90v relative flex items-center">
+        <h1 class="p-10 text-6xl text-white">Anime at it's PEAK</h1>
+        <img id="heroimg" src="public/hero.jpg" alt="" class="h-full w-full object-cover absolute top-0 -z-50" >
+    </section>
+	<main class="font-sans">
+		<h1 class="text-6xl font-bold w-full text-center my-5"><span class="astro">Top 25 </span>Anime</h1>
+        <div id="content" class="m-auto p-8 flex flex-wrap gap-8 w-full"></div>
 	</main>
 </Layout>
 
