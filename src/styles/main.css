@@ -10,5 +10,9 @@
     -webkit-text-fill-color: transparent;
 }
 
+.astrobg {
+    background: rgb(38,105,204);
+    background: linear-gradient(90deg, rgba(38,105,204,1) 0%, rgba(152,0,176,1) 100%);
+}
 
 

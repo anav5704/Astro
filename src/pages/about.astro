@@ -26,19 +26,7 @@ const skillColor = 'red'
 <Layout title="About" name="AstroAnime">
     <Nav></Nav>
 	<main class="font-test">
-		<h1 class="text-6xl font-bold w-full text-center font-test">{pageTitle}</h1>
-        <p>Hi, my name is {anav.name} and im {anav.age} years old</p>
-        <p>My tech stack includes:
-            <ul>
-                {anav.skills.map((skill) => <li class="skill">{skill}</li>)}
-            </ul>
-        </p>
-        {happy && <p>I am happy to be learning Astro!</p>}
 
-        {finished && <p>I finished this tutorial!</p>}
-
-        {goal === 3 ? <p>My goal is to finish in 3 days.</p> : <p>My goal is not 3 days.</p>}
-        <div id="content"></div>
 	</main>
 </Layout>
 
