@@ -3,14 +3,49 @@ import Layout from '../layouts/Layout.astro';
 import Nav from '../components/Nav.astro';
 import '../styles/main.css';
 
+const pageTitle = "About Me";
+
+const anav = {
+    name: "Anav",
+    age: 18,
+    skills: [
+        'HTML',
+        'CSS',
+        'JavaScript'
+    ]
+}
+
+const happy = true;
+const finished = false;
+const goal = 3;
+
+const skillColor = 'red'
+
 ---
 
 <Layout title="About" name="AstroAnime">
     <Nav></Nav>
 	<main class="font-test">
-		<h1 class="text-6xl font-bold w-full text-center font-test">Welcome</h1>
+		<h1 class="text-6xl font-bold w-full text-center font-test">{pageTitle}</h1>
+        <p>Hi, my name is {anav.name} and im {anav.age} years old</p>
+        <p>My tech stack includes:
+            <ul>
+                {anav.skills.map((skill) => <li class="skill">{skill}</li>)}
+            </ul>
+        </p>
+        {happy && <p>I am happy to be learning Astro!</p>}
+
+        {finished && <p>I finished this tutorial!</p>}
+
+        {goal === 3 ? <p>My goal is to finish in 3 days.</p> : <p>My goal is not 3 days.</p>}
         <div id="content"></div>
 	</main>
 </Layout>
 
 <script src="../scripts/script.js"></script>
+
+<style define:vars={{skillColor}}>
+    .skill {
+        color: var(--skillColor);
+    }
+</style>

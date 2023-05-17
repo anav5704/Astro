@@ -9,9 +9,9 @@ async function getAnime() {
             data.data.forEach( anime => {
             document.getElementById("content").innerHTML += 
             `
-            <div id="card" class=" shadow-md rounded-lg flex h-40 w-96 overflow-hidden">
+            <div id="card" class="col-span-1 shadow-md rounded-lg flex h-40 overflow-hidden">
                 <img src="${anime.images.jpg.image_url}" id="img"  alt="" bg-red-400 w-full object-cover">
-                <div class="p-2 w-1/2" id="name">
+                <div class="p-2" id="name">
                 <p>${anime.title}</p>
                 <p>${anime.genres[0].name} | ${anime.genres[1].name}</p>
                 <p>${anime.episodes} Episodes</p>
