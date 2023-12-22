@@ -1,1 +1,1 @@
-> Nothing much, just me learning Astro
+> Nothing much, just me learning Astro JS
