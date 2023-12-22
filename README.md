@@ -1,1 +1,1 @@
-> Nothing much, just me learning Astro JS
+> Nothing much, just me learning [Astro](https://astro.build/)
